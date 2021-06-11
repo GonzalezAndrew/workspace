@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e 
+
+PACKAGE="https://vault.bitwarden.com/download/?app=cli&platform=linux"
+TMPFILE="mktemp"
+
+wget "$PACKAGE" -O $TMPFILE
+unzip -d $PWD $TMPFILE
+rm $TMPFILE
+
+install bw /usr/local/bin/

@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+PIP_PACKAGES="pre-commit virtualenvwrapper"
+pip3.10 install $PIP_PACKAGES
