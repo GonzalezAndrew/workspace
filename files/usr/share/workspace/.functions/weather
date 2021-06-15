@@ -1,2 +1,2 @@
-#!/bin/sh
-exec curl -L wttr.in
+# #!/bin/sh
+# exec curl -L wttr.in

@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-chsh -s $(which zsh)
-echo "$(which zsh)"
 sudo rm -f /usr/share/workspace/.zshrc
 mv /usr/share/workspace/.zsh/.zshrc /usr/share/workspace/.zshrc
+
+
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions

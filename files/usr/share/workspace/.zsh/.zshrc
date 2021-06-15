@@ -4,7 +4,7 @@
 #   @author Andrew Gonzalez
 #
 #
-export PATH=$HOME/bin:/usr/local/bin:/home/andy/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/home/$USER/.local/bin:$PATH
 export GOPATH=$HOME/go 
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$GOPATH/bin:$PATH
@@ -18,7 +18,7 @@ ZSH_THEME="robbyrussell"
 HYPHEN_INSENSITIVE="true"
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git)
+plugins=(git zsh-completions)
 
 # Source the functions directory
 if [ -d ~/.functions ]; then
